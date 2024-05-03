@@ -1,0 +1,5 @@
+from sklearn.linear_model import LogisticRegression #로지스틱 회귀모델 생성
+model=LogisticRegression(multi_class='multinomial',C=10, 
+#multi_class=multinomial은 다중분류이고 c는 정규화 강도의 역수이고 디폴트 갑은 1이다
+                         solver='lbfgs',max_iter=1000,random_state=42)  #solver 최적화에 사용하는 알고리즘 
+                         #lbfgs는 제한된 메모리를 사용하여 최적화 하는 방법 메모리가 절약되고 매우 빠르지 않음
