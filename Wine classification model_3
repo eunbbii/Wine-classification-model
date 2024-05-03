@@ -1,0 +1,8 @@
+import pandas as pd # 판다스 가져오기
+df=pd.DataFrame(wine.data,columns=wine.feature_names) #와인데이터를 데이터프레임으로 저장
+#wine.data 값을 데이터 프레임 df에 저장하기
+sy=pd.Series(wine.target,dtype="category")  #wine.target을 시리즈에 카테고리형
+sy=sy.cat.rename_categories(wine.target_names) #wine.target을 싸이킷런에 카테고리형
+df['species']=sy#wine.target데이터 프레임 특성추가하기
+print(df.head()) #데이터프레임에 저장한 head데이터를 출력
+df[['total_phenols','alcohol','species']] #df로 특정데이터 분리
