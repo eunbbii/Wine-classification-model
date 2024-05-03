@@ -1,0 +1,7 @@
+#모델 학습
+model.fit(x_train,y_train) 
+#모델 학습 결과
+import numpy as np #넘파이라이브러리 생성
+w=model.coef_      #선형회귀의 가중치
+b=model.intercept_ #선형회귀의 바이어스
+print("w=\n",np.round(w,2),"\n b= \n",np.round(b,2)) #소수점 둘째자리까지 출력
