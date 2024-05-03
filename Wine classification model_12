@@ -1,0 +1,5 @@
+# (2) 소프트맥스 추정 확률
+print("(2) 소프트맥스 추정 확률 s(y')")
+print("setosa:",np.round(model.predict_proba(x_set),2))     #클래스0일때 확률
+print("versicolor:",np.round(model.predict_proba(x_set),2)) #클래스1일때 확률
+print("virginica:",np.round(model.predict_proba(x_set),2))  #클래스2일때확률
