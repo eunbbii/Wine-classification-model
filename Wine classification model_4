@@ -1,0 +1,5 @@
+import matplotlib.pyplot as plt #matplotlib라이브러리 추가
+import seaborn as sns #데이터 시각화하기
+sns.pairplot(df[['total_phenols','alcohol','species']],hue='species', height=5)
+#x값에 total,alcohol넣고 y값에도total,alcohol데이터를 넣어서 그래프만들기,색 분간,그래프 크기 5
+plt.show()  #그래프 보여주기
