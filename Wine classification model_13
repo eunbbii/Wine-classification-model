@@ -1,0 +1,5 @@
+# (3) One-hot-encoding 결과(y)
+print("(3)One-hot-encoding 결과 y")
+print(" 입력:setosa >",model.predict(x_set))     #예측한 결과 출력
+print(" 입력:versicolor >",model.predict(x_ver)) #예측한 결과 출력
+print(" 입력:virginica >",model.predict(x_vir))  #예측한 결과 출력
