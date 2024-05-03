@@ -1,0 +1,2 @@
+print('특성(x):',wine.feature_names)  #특성이름
+print('특성(y):',wine.target_names)   #클래스 이름
