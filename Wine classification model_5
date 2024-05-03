@@ -1,0 +1,4 @@
+import matplotlib.pyplot as plt #matplotlib라이브러리 추가
+import seaborn as sns #데이터 시각화하기
+sns.pairplot(df,x_vars=['alcohol'],y_vars=['total_phenols'],hue='species', height=5) #x에 alcohol,y에 total_phenols,class에 따라 색으로 분류
+plt.show() #그래프 보여주기
