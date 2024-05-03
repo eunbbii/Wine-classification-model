@@ -1,0 +1,4 @@
+#성능 평가하기
+y_pred=model.predict(x_test) #예측하기
+from sklearn.metrics import accuracy_score #정확도 불러오기
+print("정확도=%.4f" %accuracy_score(y_test,y_pred)) #정확도 출력
