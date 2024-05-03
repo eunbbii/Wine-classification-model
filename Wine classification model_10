@@ -1,0 +1,9 @@
+# 로지스틱 회귀 모델
+def H(x): #함수
+  Hx=np.matmul(x,w.T)+b  #예측값 계산하는 코드
+  return 1/(1+np.exp(-Hx)) #반환
+# (1) y': H(x)
+print("(1) H(x) : 모델 예측값(y')")  #모델 예측값 출력
+print(" H(x1) :" ,H(x_set)) #예측값 출력
+print(" H(x2) :" ,H(x_ver)) #예측값 출력
+print(" H(x3) :" ,H(x_vir)) #예측값 출력
